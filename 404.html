@@ -1,3 +1,10 @@
 <script>
-    window.location.replace("https://github.com/justaprudev" + window.location.pathname)
+    var path = window.location.pathname
+    if (path == "/profile" || path == "/profile/") {
+        var path = "/";
+    }
+    if (path == "/source" || path == "/source/") {
+        var path = "/justaprudev.github.io";
+    }
+    window.location.replace("https://github.com/justaprudev" + path)
 </script>
