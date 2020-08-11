@@ -1,5 +1,8 @@
 <script>
     var path = window.location.pathname
+    if (path == "/forks" || path == "/forks/") {
+        var path = path.replace("/forks", "/network/members");
+    }
     if (path == "/profile" || path == "/profile/") {
         var path = "/";
     }
